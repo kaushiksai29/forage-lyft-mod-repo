@@ -1,11 +1,8 @@
-from car_factory import CarFactory
-
-from car import Car
+from engine.engine import Engine
 
 
-class SternmanEngine(Car, CarFactory):
-    def __init__(self, last_service_date, warning_light_is_on):
-        super().__init__(last_service_date)
+class SternmanEngine(Engine):
+    def __init__(self, warning_light_is_on):
         self.warning_light_is_on = warning_light_is_on
 
     def needs_service(self):
