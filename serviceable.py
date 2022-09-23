@@ -1,8 +1,6 @@
-from sys import implementation
-from car import Car, abstractmethod
-from car_factory import CarFactory, abstractmethod
+from abc import ABC, abstractmethod
 
-class Serviceable(CarFactory):
+class Serviceable(ABC):
     def __init__(self):
         pass
 

@@ -1,7 +1,7 @@
-from car_factory import CarFactory
+from abc import ABC
 
 
-class Battery(CarFactory):
+class Battery(ABC):
     def __init__(self):
         pass
 
